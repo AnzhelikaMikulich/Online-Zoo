@@ -408,3 +408,53 @@ body {
   color: #4f4f4f;
   padding: 0 73px;
 }
+/* карта */
+
+.map {
+  background: #f2f2f2;
+}
+.map__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+.map_title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: #333333;
+}
+.map__map {
+  padding-top: 60px;
+  position: relative;
+}
+.map__animals_one {
+  position: absolute;
+  top: 22%;
+  left: 9%;
+}
+.map-images {
+  position: absolute;
+  top: 35%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+}
+.map__animals_two {
+  position: absolute;
+  top: 27%;
+  left: 19%;
+}
+.map__animals_three {
+  position: absolute;
+  top: 43%;
+  left: 46.5%;
+}
+.map__animals_four {
+  position: absolute;
+  top: 25%;
+  right: 18.5%;
+}
