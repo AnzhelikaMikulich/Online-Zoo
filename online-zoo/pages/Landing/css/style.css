@@ -552,22 +552,47 @@ body {
 .footer {
 	background-color: #333333;
 }
+.footer__logo {
+	padding-top: 30px;
+}
 .footer__block {
 	display: flex;
 	flex-direction: column;
 }
 .footer__header {
+	padding: 42px 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+.footer_btn {
+	width: 275px;
+	margin-top: -5px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
 }
 .link_footer {
 	color: #fefefe;
+	padding: 0 72px 0 0;
 }
 .block-two_header {
+	padding-top: 60px;
+	margin-left: 15px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+.footer__form_label {
+	border-bottom: 1px solid #bdbdbd;
+}
+.footer__label {
+	background: transparent;
 }
 .block-one {
 }
@@ -576,9 +601,28 @@ body {
 .footer__form {
 	display: flex;
 	flex-direction: column;
+	color: #e0e0e0;
 }
 
 .block-two {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+	width: 50%;
+	flex: 0 1 auto;
+}
+.footer__form_textarea {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #bdbdbd;
+	position: relative;
+}
+.textarea-title {
+	padding: 0 5px;
+	background-color: #333333;
+	position: absolute;
+	top: -10px;
+	left: 5px;
 }
 .footer__nav {
 }
@@ -592,8 +636,14 @@ body {
 }
 .menu_link {
 }
-
+.first_ch_footer {
+	padding-left: 0px;
+}
+.last_ch_footer {
+	padding-right: 0px;
+}
 .footer__sotial {
+	margin-left: 15px;
 	display: flex;
 	flex-direction: column;
 }
@@ -602,6 +652,7 @@ body {
 	list-style: none;
 }
 .sotial-title {
+	padding: 60px 0 35px 0;
 	font-family: Roboto;
 	font-weight: bold;
 	font-size: 14px;
@@ -609,15 +660,9 @@ body {
 	text-transform: uppercase;
 	color: #fefefe;
 }
-.sotial-adres {
-	font-family: Roboto;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 16px;
-	color: #fefefe;
-}
+.sotial-adres,
 .sotial-email {
+	padding-bottom: 20px;
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
@@ -625,7 +670,16 @@ body {
 	line-height: 16px;
 	color: #fefefe;
 }
-.sotial-links {
+.sotial-adres__adres,
+.sotial-email__email {
+	padding-bottom: 5px;
+}
+.sotial-email a {
+	text-decoration: none;
+	color: #fefefe;
+}
+.sotial-links li {
+	padding-right: 15px;
 }
 .block-three {
 }
