@@ -168,7 +168,7 @@
 							<img src="../../assets/Landing/images/Rectangle3.png" alt="slider_img" />
 						</div>
 						<div class="how_it_works_input">
-							<label for="rang" class="label-title"><span>1/</span>4</label>
+							<label for="rang" class="label-title"><span>01/</span>04</label>
 							<input type="range" class="input-range" min="0" max="4" value="0" id="rang" />
 						</div>
 
@@ -272,9 +272,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="how_it_works_input">
-						<label for="rang" class="label-title"><span>1/</span>4</label>
-						<input type="range" class="input-range" min="0" max="4" value="0" id="rang" />
+					<div class="how_it_works_input testimonials__input">
+						<label for="rang" class="label-title"><span>01/</span>08</label>
+						<input type="range" class="input-range" min="0" max="8" value="0" id="rang" />
 					</div>
 					<button class="favorite_block_button btn">Choose your favorite</button>
 
@@ -369,9 +369,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="how_it_works_input">
-						<label for="rang" class="label-title"><span>1/</span>4</label>
-						<input type="range" class="input-range" min="0" max="4" value="0" id="rang" />
+					<div class="how_it_works_input testimonials__input">
+						<output for="rang" class="label-title"><span>02/</span>08</output>
+						<input type="range" class="input-range" min="0" max="8" value="1" id="rang" />
 					</div>
 					<button class="favorite_block_button btn">Leave feedback</button>
 					<button class="slider_dots slider_next">
@@ -553,32 +553,52 @@
 							</div>
 							<div class="contact-us footer__form">
 								<fieldset>
-									<legend>Contact Us</legend>
-									<form action="#">
+									<legend class="footer__form_legend">Contact Us</legend>
+									<form action="#" class="footer__form_block">
 										<div class="footer__form_label">
 											<label for="name">Name</label>
-											<input class="footer__label" type="text" id="name" />
+											<input class="footer__label" type="text" id="name" required />
 										</div>
 										<div class="footer__form_label">
 											<label for="email">Email</label>
-											<input class="footer__label" type="email" id="email" />
+											<input class="footer__label" type="email" id="email" required />
 										</div>
 										<div class="footer__form_textarea">
 											<div class="textarea-title">Please enter your message</div>
 											<textarea
+												maxlength="280"
 												name="Please enter your message "
 												id="textarea"
 												class="footer__label"
-												cols="30"
-												rows="10"
+												cols="53"
+												rows="7"
+												required
 											></textarea>
 										</div>
 										<div>
-											<input type="checkbox" id="che" class="footer__label" />
-											<label for="che">I agree to the processing of Personal Data</label>
-										</div>
+											<input type="checkbox" id="che" class="footer__label che" required />
 
-										<div><button type="submit" class="footer__label">SEND</button></div>
+											<label class="label__che" for="che"
+												>I agree to the processing of Personal Data</label
+											>
+										</div>
+										<div class="footer__form_label-btn">
+											<button type="submit" class="footer__label footer__label_btn">
+												<p class="label_btn-title">SEND</p>
+												<svg
+													width="49"
+													height="8"
+													viewBox="0 0 49 8"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M48.3536 4.35355C48.5488 4.15829 48.5488 3.84171 48.3536 3.64645L45.1716 0.464466C44.9763 0.269204 44.6597 0.269204 44.4645 0.464466C44.2692 0.659728 44.2692 0.976311 44.4645 1.17157L47.2929 4L44.4645 6.82843C44.2692 7.02369 44.2692 7.34027 44.4645 7.53553C44.6597 7.7308 44.9763 7.7308 45.1716 7.53553L48.3536 4.35355ZM0 4.5L48 4.5V3.5L0 3.5L0 4.5Z"
+														fill="#FEFEFE"
+													/>
+												</svg>
+											</button>
+										</div>
 									</form>
 								</fieldset>
 							</div>
@@ -658,8 +678,8 @@
 					<div class="footer__footer">
 						<hr class="hr" />
 						<div class="rsscool">
-							<p>©Noora Sagnayeva</p>
-							<p>©RSSchool and ©Yem Digital - 2021</p>
+							<p class="rsscool__p">©Noora Sagnayeva</p>
+							<p class="rsscool__p">©RSSchool and ©Yem Digital - 2021</p>
 						</div>
 					</div>
 				</div>
