@@ -81,6 +81,10 @@ body {
 .menu_link:active {
 	font-weight: 900;
 }
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
 .container_big {
 	max-width: 1620px;
 	margin: 0 auto;
