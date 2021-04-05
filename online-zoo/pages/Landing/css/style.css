@@ -958,15 +958,10 @@ body {
 	font-weight: 900;
 	font-size: 18px;
 	line-height: 21px;
-	/* identical to box height */
-
-	/* Gray 1 */
-
 	color: #333333;
 	padding-bottom: 7px;
 }
-.popap__text {
-}
+
 .popap__text p {
 	padding-bottom: 5px;
 }
@@ -977,8 +972,5 @@ body {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 800;
-
-	/* Gray 1 */
-
 	color: #333333;
 }
