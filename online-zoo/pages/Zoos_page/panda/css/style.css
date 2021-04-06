@@ -425,19 +425,17 @@ body {
 .favorite {
 	background: #f2f2f2;
 	position: absolute;
-	top: -900px;
-	left: -900px;
-	visibility: hidden;
+	top: 94px;
+	left: 25px;
+	width: 160px;
+	height: 590px;
+	z-index: 999;
 }
 .favorite_block {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 60px 0;
-	position: sticky;
-	top: -678px;
-	left: -900px;
-	visibility: visible;
 }
 .favorite_block_title {
 	font-weight: 700;
