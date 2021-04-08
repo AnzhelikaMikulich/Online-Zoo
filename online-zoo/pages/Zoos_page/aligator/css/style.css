@@ -202,7 +202,7 @@ main {
 .slider_border:hover {
 	transition: 1s ease;
 	transform: scale(1.25);
-	background: linear-gradient(#07eee0, #df496d);
+	background: linear-gradient(to right,#07eee0, #df496d);
 }
 .slider_item_favorite {
 	width: 140px;
@@ -272,7 +272,7 @@ main {
 	width: 30px;
 }
 .btn {
-	width: 245px;
+	width: 195px;
 	height: 55px;
 	background: linear-gradient(106.89deg, #4bd8b5 -14.32%, #49d6df 100.68%);
 	border-radius: 3px;

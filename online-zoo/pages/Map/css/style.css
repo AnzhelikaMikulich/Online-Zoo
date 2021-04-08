@@ -155,7 +155,7 @@ body {
 .slider_border:hover {
 	transition: 1s ease;
 	transform: scale(1.25);
-	background: linear-gradient(#07eee0, #df496d);
+	background: linear-gradient(to right, #07eee0, #df496d);
 }
 .slider_item_favorite {
 	width: 140px;
