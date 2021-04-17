@@ -86,12 +86,16 @@ body {
 	margin: 0 auto;
 	position: relative;
 }
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
 @media (max-width: 1200px) {
 	.container_big {
 		max-width: 900px;
 	}
 	.container {
-		max-width: 800px;
+		max-width: 900px;
 	}
 }
 @media (max-width: 640px) {
@@ -146,7 +150,7 @@ body {
 .favorite_animal_slider img {
 	width: 140px;
 	height: 203px;
-	object-fit: 100% auto;
+	object-fit: cover;
 	border-radius: 5px;
 }
 .slider_item_favorite {
@@ -484,6 +488,7 @@ body {
 @media (max-width: 1200px) {
 	.how_it_works_block {
 		width: 100%;
+		padding: 100px 50px;
 	}
 }
 
@@ -539,6 +544,27 @@ body {
 	font-size: 14px;
 	line-height: 16px;
 	color: #4f4f4f;
+}
+
+@media (max-width: 640px) {
+	.mission_block {
+		flex-direction: column;
+		width: 50%;
+		padding: 100px 0 50px;
+	}
+	.mission_block_item {
+		padding-bottom: 50px;
+	}
+}
+
+@media (max-width: 320px) {
+	.mission_block {
+		width: 100%;
+		padding: 50px 0 20px 0;
+	}
+	.mission_block_item {
+		padding-bottom: 30px;
+	}
 }
 /* блок слайдер */
 .favorite {
@@ -637,6 +663,35 @@ body {
 	transition: 0.5s ease-in-out;
 	fill: #49d6df;
 }
+@media (max-width: 1200px) {
+	.favorite .slider_item {
+		width: 210px;
+		height: 301px;
+	}
+	.favorite .slider_item .slider_img_img img {
+		width: 210px;
+		height: 301px;
+	}
+	.slider_img_img::before {
+		width: 210px;
+		height: 301px;
+	}
+}
+
+@media (max-width: 640px) {
+	.favorite .slider_item {
+		margin: 0 20px 0 0;
+	}
+}
+
+@media (max-width: 320px) {
+	.favorite_block {
+		padding: 50px 0;
+	}
+	.favorite_block_title {
+		font-size: 36px;
+	}
+}
 /* блок с кругами */
 
 .pay_and_feed {
@@ -715,6 +770,33 @@ body {
 	text-transform: uppercase;
 	color: #ffffff;
 }
+@media (max-width: 1200px) {
+	.pay_arrow img {
+		width: 48px;
+	}
+}
+@media (max-width: 640px) {
+	.pay_and_feed_block_icons {
+		flex-direction: column;
+	}
+	.pay_arrow img {
+		transform: rotate(90deg);
+		margin: 50px 0;
+	}
+}
+
+@media (max-width: 320px) {
+	.pay_and_feed_block {
+		padding: 50px 0;
+	}
+	.pay_and_feed_block_title {
+		font-size: 36px;
+	}
+	.pay_and_feed_block_text {
+		display: none;
+	}
+}
+
 /* новый слойдер с фитбеком */
 .testimonials {
 	background: #f2f2f2;
