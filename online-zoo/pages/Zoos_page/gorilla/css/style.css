@@ -102,10 +102,10 @@ main {
 		max-width: 900px;
 	}
 	.container {
-		max-width: 800px;
+		max-width: 900px;
 	}
 	main {
-		left: -40px;
+		left: 0px;
 	}
 }
 @media (max-width: 640px) {
@@ -114,9 +114,6 @@ main {
 	}
 	.container {
 		max-width: 600px;
-	}
-	main {
-		left: 0px;
 	}
 	.header {
 		z-index: 10;
@@ -127,8 +124,8 @@ main {
 		display: block;
 		position: absolute;
 		top: 35px;
-		right: 10px;
-		width: 30px;
+		right: 0px;
+		width: 40px;
 		height: 18px;
 		cursor: pointer;
 		z-index: 5;
@@ -214,9 +211,10 @@ main {
 		padding: 0px 0px 45px 0px;
 	}
 	.header_check {
-		right: 10%;
+		right: 12%;
 	}
 }
+
 @media (max-width: 320px) {
 	.container_big {
 		max-width: 300px;
@@ -224,8 +222,8 @@ main {
 	.container {
 		max-width: 300px;
 	}
-	main {
-		left: 0px;
+	.header_check {
+		right: 20%;
 	}
 }
 
@@ -840,7 +838,8 @@ main {
 		padding-top: 50px;
 	}
 	.slider_prev {
-		top: 12%;}
+		top: 12%;
+	}
 }
 @media (max-width: 320px) {
 	.favorite {
@@ -1082,31 +1081,64 @@ main {
 @media (max-width: 1200px) {
 	.footer_btn {
 		position: absolute;
-		bottom: 40%;
+		bottom: 37%;
+	}
+	.block-two_header {
+		padding-top: 80px;
+	}
+	.footer__logo {
+		padding: 60px 0 65px;
 	}
 }
-@media (max-width: 640px) and (min-width: 321px) {
+@media (max-width: 640px) {
+	.footer__nav_menu {
+		display: inline;
+		flex-direction: column;
+		position: absolute;
+		top: 180px;
+		left: 0;
+	}
+	.footer__form {
+		margin-top: 77px;
+	}
+	.footer__nav_menu li {
+		padding: 0px 0px 0px 0px;
+	}
+	.link_footer {
+		font-size: 16px;
+	}
 	.footer__header {
 		flex-direction: column;
 	}
 	.footer_btn {
 		position: absolute;
-		top: 10%;
-		right: 5%;
+		top: 9%;
+		right: 0%;
+	}
+	.sotial-title {
+		padding: 0px 0 35px 0;
 	}
 }
 @media (max-width: 320px) {
+	.footer__nav_menu {
+		top: 90px;
+	}
 	.block-two {
 		flex-direction: column-reverse;
+	}
+	.footer__form {
+		margin-top: 140px;
 	}
 	.footer__header {
 		flex-direction: column;
 	}
 	.footer_btn {
-		position: absolute;
-		bottom: 12%;
+		top: 80%;
 	}
 	.footer__logo {
 		padding: 5px 0;
+	}
+	.footer__label {
+		width: 100%;
 	}
 }
