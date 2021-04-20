@@ -680,6 +680,11 @@ body {
 	.how_it_works_text {
 		padding: 20px 0;
 	}
+	.how_it_works_slider img {
+		height: 323px;
+		object-position: 0%;
+		object-fit: cover;
+	}
 }
 
 /* блок с иконками  */
