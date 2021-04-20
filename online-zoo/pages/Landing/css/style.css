@@ -564,6 +564,9 @@ body {
 	.favorite_animal {
 		height: 670px;
 	}
+	.favorite_animal_btn {
+		margin: 15px 0 45px;
+	}
 	.favorite_animal_block {
 		width: 100%;
 		margin: 90px 0px;
@@ -629,7 +632,7 @@ body {
 	align-self: flex-start;
 }
 .how_it_works_text {
-	padding: 30px 0;
+	padding: 30px 0 20px 0;
 	font-family: 'Roboto';
 	font-size: 14px;
 	line-height: 16px;
@@ -654,10 +657,14 @@ body {
 @media (max-width: 1200px) {
 	.how_it_works_block {
 		width: 100%;
-		padding: 100px 50px;
+		padding: 100px 70px;
+	}
+	.how_it_works_slider {
+		width: 100%;
 	}
 	.how_it_works_slider img {
 		width: 100%;
+		height: 323px;
 	}
 }
 
@@ -668,14 +675,21 @@ body {
 	.how_it_works_slider img {
 		width: 100%;
 	}
+
+	.how_it_works_input {
+		padding-top: 40px;
+	}
 }
 
 @media (max-width: 320px) {
 	.how_it_works_block {
-		padding: 50px 0;
+		padding: 40px 0 50px;
 	}
 	.how_it_works_title {
 		font-size: 38px;
+	}
+	.how_it_works_btn {
+		margin-top: 10px;
 	}
 	.how_it_works_text {
 		padding: 20px 0;
@@ -724,7 +738,7 @@ body {
 	.mission_block {
 		flex-direction: column;
 		width: 50%;
-		padding: 100px 0 50px;
+		padding: 100px 0 70px;
 	}
 	.mission_block_item {
 		padding-bottom: 50px;
@@ -860,10 +874,17 @@ body {
 
 @media (max-width: 320px) {
 	.favorite_block {
-		padding: 50px 0;
+		padding: 100px 0 50px;
+	}
+	.favorite_block_slider {
+		width: 100%;
+		padding-top: 20px;
 	}
 	.favorite_block_title {
 		font-size: 36px;
+	}
+	.favorite_block_button {
+		margin-top: 25px;
 	}
 }
 /* блок с кругами */
@@ -956,9 +977,15 @@ body {
 	.pay_and_feed_block_icons {
 		flex-direction: column;
 	}
+	.pay_and_feed_block_button {
+		margin-top: 20px;
+	}
 	.pay_arrow img {
 		transform: rotate(90deg);
 		margin: 50px 0;
+	}
+	.pay_arrow {
+		height: 100px;
 	}
 }
 
@@ -1037,17 +1064,33 @@ body {
 	.testimonials__block_one {
 		display: none;
 	}
+	.testimonials__slider {
+		padding: 50px 0 25px 0;
+	}
+	.testimonials__input {
+		padding-top: 35px;
+	}
 }
 
 @media (max-width: 320px) {
+	.testimonials__input {
+		padding-top: 25px;
+	}
+	.test {
+		padding-top: 45px;
+	}
 	.testimonials__block {
 		padding: 50px 0;
+		height: 360px;
 	}
 	.testimonials__slider {
-		padding: 32px 0 25px 0;
+		padding: 25px 0 25px 0;
 	}
 	.testimonials__icon img {
-		top: 0;
+		position: absolute;
+		transform: translate(-50%, 0%);
+		top: 0%;
+		left: 50%;
 	}
 }
 /* карта */
@@ -1077,7 +1120,7 @@ body {
 }
 .map__map > img {
 	width: 100%;
-	object-fit: cover;
+	height: 450px;
 }
 .svg__animals {
 	height: 94px;
@@ -1139,6 +1182,16 @@ body {
 	}
 }
 @media (max-width: 640px) {
+	.map__map {
+		padding-top: 50px;
+	}
+	.map__map > img {
+		width: 100%;
+		height: 285px;
+	}
+	.map__block {
+		padding: 100px 0 80px 0;
+	}
 	.map__animals_one {
 		top: 18%;
 	}
@@ -1158,13 +1211,20 @@ body {
 
 @media (max-width: 320px) {
 	.map__map {
-		padding-top: 30px;
+		padding-top: 25px;
+	}
+	.map__map > img {
+		width: 100%;
+		height: 150px;
+	}
+	.map_animal_btn {
+		margin-top: 20px;
 	}
 	.map_title {
 		font-size: 36px;
 	}
 	.map__block {
-		padding: 50px 0;
+		padding: 50px 0 60px 0;
 	}
 	.map__animals_one {
 		top: 18%;
@@ -1427,19 +1487,27 @@ body {
 }
 @media (max-width: 320px) {
 	.footer__nav_menu {
-		top: 90px;
+		top: 130px;
+	}
+	.footer__nav_menu li {
+		margin-bottom: 7px;
 	}
 	.block-two {
 		flex-direction: column-reverse;
 	}
 	.footer__form {
-		margin-top: 140px;
+		margin-top: 150px;
+	}
+	.footer__sotial {
+		width: 120%;
+		margin-left: 0%;
 	}
 	.footer__header {
 		flex-direction: column;
 	}
 	.footer_btn {
-		top: 80%;
+		top: 79%;
+		left: 5%;
 	}
 	.footer__logo {
 		padding: 5px 0;
