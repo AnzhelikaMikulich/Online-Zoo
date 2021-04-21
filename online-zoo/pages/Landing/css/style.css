@@ -259,9 +259,19 @@ body {
 }
 .favorite_animal_slider {
 	width: 62.5%;
-	position: absolute;
+	display: flex;
+	flex-direction: column;
+	position: relative;
 	bottom: 240px;
 	right: -220px;
+}
+
+.favorite_animal_slider_img {
+	position: relative;
+	left: 30%;
+	display: flex;
+	z-index: 1;
+	justify-content: space-between;
 }
 .favorite_animal_slider img {
 	width: 140px;
@@ -270,7 +280,7 @@ body {
 	border-radius: 5px;
 }
 .slider_item_favorite {
-	width: 140px;
+	padding: 0 4px;
 	position: relative;
 }
 .slider_item_favorite > .slider__effect > .slider_paragr {
@@ -415,6 +425,7 @@ body {
 }
 .favorite_animal_sotial {
 	padding-bottom: 105px;
+	margin-top: -20%;
 }
 .favorite_animal_sotial_links li {
 	display: block;
@@ -426,8 +437,8 @@ body {
 }
 .input-favorite {
 	position: absolute;
-	bottom: 15%;
-	right: 22%;
+	bottom: -70%;
+	right: 27%;
 }
 .input-favorite .input-range {
 	background-color: transparent;
@@ -448,7 +459,7 @@ body {
 .favorite__line {
 	position: absolute;
 	top: 52%;
-	left: 42%;
+	left: 10%;
 }
 .slider_item_favorite_big {
 	transform: scale(1.7);
@@ -482,27 +493,26 @@ body {
 	}
 	.favorite_animal_slider {
 		width: 70.5%;
-		position: absolute;
-		top: 49%;
-		right: -17%;
+		bottom: 70px;
+		right: -218px;
+	}
+	.favorite_animal_slider_img {
+		position: relative;
+		left: 18%;
 	}
 
 	.favorite_animal_slider > .slider_item {
-		margin: 0 50px;
 	}
 	.input-favorite {
-		right: -5%;
-		bottom: 0;
+		bottom: -45%;
+		right: 10%;
 	}
 
 	.favorite__line {
-		position: absolute;
-		top: 66.5%;
-		left: 37%;
+		left: -4%;
 	}
 	.favorite_animal_sotial {
-		padding-top: 190px;
-		padding-bottom: 0px;
+		margin-top: -8%;
 	}
 	.favorite_animal_slider img {
 		width: 180px;
@@ -512,7 +522,6 @@ body {
 	}
 	.slider_item_favorite_big {
 		transform: scale(1.3);
-		margin: 0 46px;
 	}
 }
 @media (max-width: 900px) {
@@ -780,6 +789,13 @@ body {
 	line-height: 16px;
 	color: #4f4f4f;
 }
+@media (max-width: 1200px) {
+	.mission_block {
+		display: flex;
+		justify-content: space-between;
+		padding: 95px 0 115px;
+	}
+}
 
 @media (max-width: 640px) {
 	.mission_block {
@@ -1017,7 +1033,7 @@ body {
 		width: 48px;
 	}
 	.pay_and_feed_block_icons {
-		padding: 10px 0 30px;
+		padding: 15px 0 28px;
 	}
 }
 @media (max-width: 640px) {
@@ -1214,6 +1230,16 @@ body {
 	fill: #eb5757;
 }
 @media (max-width: 1200px) {
+	.map__block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 95px 0 102px;
+	}
+	.map__map > img {
+		width: 100%;
+		height: 434px;
+	}
 	.map__animals_one {
 		top: 22%;
 	}
