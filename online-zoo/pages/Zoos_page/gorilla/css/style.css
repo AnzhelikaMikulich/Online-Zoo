@@ -108,6 +108,11 @@ main {
 		left: -90px;
 	}
 }
+@media (max-width: 1190px) {
+	main {
+		left: 0px;
+	}
+}
 @media (max-width: 640px) {
 	.container_big {
 		max-width: 600px;
