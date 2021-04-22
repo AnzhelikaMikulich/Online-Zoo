@@ -1139,6 +1139,14 @@ body {
 		top: 0%;
 		left: 50%;
 	}
+	.slider_text {
+		font-size: 14px;
+
+		padding: 0 20px;
+	}
+	.slider_title {
+		font-size: 16px;
+	}
 }
 /* карта */
 
