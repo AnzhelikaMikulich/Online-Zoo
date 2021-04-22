@@ -618,8 +618,11 @@ body {
 		width: 93%;
 		padding: 20px 20px 0 20px;
 	}
+	.slider_border {
+		margin: 0 4px;
+	}
 	.slider_body {
-		width: 70%;
+		width: 75%;
 		height: 170px;
 		overflow-x: hidden;
 		align-items: center;
@@ -632,8 +635,17 @@ body {
 		top: 65%;
 		right: 50px;
 	}
+	.how_it_works_input {
+		padding-top: 20px;
+	}
+	.input-range {
+		margin-top: 10px;
+	}
 }
 @media (max-width: 640px) {
+	.favorite_block {
+		padding: 60px 0 15px;
+	}
 	.favorite {
 		padding-top: 94px;
 	}
@@ -642,7 +654,7 @@ body {
 		padding: 20px 0;
 	}
 	.slider_body {
-		width: 85%;
+		width: 90%;
 		height: 170px;
 		overflow-x: hidden;
 		align-items: center;
@@ -656,16 +668,24 @@ body {
 		left: 20px;
 	}
 	.favorite_block_slider {
-		padding-top: 0px;
+		padding-top: 10px;
+	}
+
+	.slider_border {
+		margin: 0 4px;
 	}
 }
 
 @media (max-width: 320px) {
+	.favorite_block_slider {
+		padding-top: 0px;
+	}
 	.favorite_block {
 		padding: 16px 0 0 0;
 	}
 	.favorite_block_title {
 		font-size: 24px;
+		margin-top: 3px;
 	}
 	.favorite_block_text {
 		width: 100%;
@@ -683,12 +703,12 @@ body {
 		height: 60px;
 	}
 	.slider_item {
-		width: 73px;
-		height: 73px;
+		width: 70px;
+		height: 70px;
 	}
 	.slider_border {
-		width: 79px;
-		height: 79px;
+		width: 75px;
+		height: 72px;
 	}
 	.slider_prev {
 		top: 75%;
@@ -702,7 +722,8 @@ body {
 	}
 	.how_it_works_input {
 		padding-top: 0px;
-		margin-top: -10px;
+		margin-left: 20px;
+		margin-top: -25px;
 	}
 }
 /* карта */
