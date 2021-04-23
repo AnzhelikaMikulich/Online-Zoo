@@ -709,8 +709,11 @@ body {
 }
 
 @media (max-width: 640px) {
+	.how_it_works_text {
+		padding: 30px 0 30px 0;
+	}
 	.how_it_works_block {
-		padding: 100px 0 68px 0;
+		padding: 100px 0 60px 0;
 	}
 	.how_it_works_slider img {
 		width: 100%;
@@ -785,10 +788,14 @@ body {
 	.mission_block {
 		flex-direction: column;
 		width: 50%;
-		padding: 100px 0 70px;
+		padding: 100px 0 55px;
 	}
 	.mission_block_item {
 		padding-bottom: 50px;
+	}
+	.mission_block_item_text {
+		width: 90%;
+		padding: 0 0 0 15px;
 	}
 }
 
@@ -914,6 +921,9 @@ body {
 }
 
 @media (max-width: 640px) {
+	.favorite_block {
+		padding: 100px 0 105px;
+	}
 	.favorite .slider_item {
 		margin: 0 20px 0 0;
 	}
@@ -1021,6 +1031,11 @@ body {
 	}
 }
 @media (max-width: 640px) {
+	.pay_and_feed_block_text {
+		width: 90%;
+
+		padding: 20px 0 30px;
+	}
 	.pay_and_feed_block_icons {
 		flex-direction: column;
 	}
@@ -1522,22 +1537,28 @@ body {
 	}
 }
 @media (max-width: 640px) {
+	.rsscool {
+		padding: 60px 0 70px 0;
+	}
+	.footer__logo {
+		padding: 55px 0 65px;
+	}
 	.footer__sotial {
-		margin-left: 0px;
+		margin-left: -10px;
 		margin-top: -15px;
 	}
 	.footer__nav_menu {
 		display: inline;
 		flex-direction: column;
 		position: absolute;
-		top: 180px;
+		top: 170px;
 		left: 0;
 	}
 	.footer__form {
 		margin-top: 77px;
 	}
 	.footer__nav_menu li {
-		padding: 0px 0px 0px 0px;
+		padding: 0px 0px 5px 0px;
 	}
 	.link_footer {
 		font-size: 16px;
