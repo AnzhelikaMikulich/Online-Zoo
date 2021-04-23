@@ -895,6 +895,9 @@ body {
 	.map__animals_four {
 		top: 15%;
 	}
+	.map_animal_btn {
+		margin-top: 35px;
+	}
 }
 /* футер */
 .footer {
@@ -1092,6 +1095,9 @@ body {
 	background-color: #e5e5e5;
 }
 @media (max-width: 1200px) {
+	.rsscool {
+		padding: 40px 0 70px 0;
+	}
 	.footer__form_label-btn {
 		margin: 15px 0 0 auto;
 	}
@@ -1142,6 +1148,9 @@ body {
 	}
 	.footer__logo {
 		padding: 55px 0 65px;
+	}
+	.footer__sotial {
+		margin-left: 0px;
 	}
 }
 @media (max-width: 320px) {
