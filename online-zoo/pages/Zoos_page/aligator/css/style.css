@@ -1468,7 +1468,7 @@ main {
 	}
 	.footer__nav_menu {
 		top: 135px;
-		left: 10px;
+		
 	}
 	.block-two {
 		flex-direction: column-reverse;
@@ -1479,7 +1479,7 @@ main {
 	.footer__header {
 		flex-direction: column;
 
-		padding: 45px 0 98px 10px;
+		padding: 45px 0 98px 0px;
 	}
 	.footer_btn {
 		top: 76.5%;
