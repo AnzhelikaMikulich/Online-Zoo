@@ -709,6 +709,10 @@ body {
 }
 
 @media (max-width: 640px) {
+	.how_it_works_btn {
+		margin-top: 30px;
+		margin-bottom: 5px;
+	}
 	.how_it_works_text {
 		padding: 30px 0 30px 0;
 	}
@@ -726,21 +730,25 @@ body {
 
 @media (max-width: 320px) {
 	.how_it_works_block {
-		padding: 40px 0 50px;
+		padding: 40px 0 45px;
 	}
 	.how_it_works_title {
-		font-size: 38px;
+		font-size: 36px;
 	}
 	.how_it_works_btn {
 		margin-top: 10px;
 	}
 	.how_it_works_text {
-		padding: 20px 0;
+		padding: 15px 0 30px;
 	}
 	.how_it_works_slider img {
 		height: 323px;
 		object-position: 0%;
 		object-fit: cover;
+	}
+	.how_it_works_input {
+		padding-top: 20px;
+		padding-bottom: 15px;
 	}
 }
 
@@ -800,6 +808,13 @@ body {
 }
 
 @media (max-width: 320px) {
+	.mission_block_item_text {
+		width: 100%;
+		padding: 0 0 0 0px;
+	}
+	.mission_block_item_title {
+		padding: 10px 0 16px;
+	}
 	.mission_block {
 		width: 100%;
 		padding: 50px 0 20px 0;
@@ -931,7 +946,10 @@ body {
 
 @media (max-width: 320px) {
 	.favorite_block {
-		padding: 100px 0 50px;
+		padding: 95px 0 50px;
+	}
+	.favorite-how_it_works_input {
+		padding: 40px 0 5px;
 	}
 	.favorite_block_slider {
 		width: 100%;
@@ -1053,7 +1071,7 @@ body {
 
 @media (max-width: 320px) {
 	.pay_and_feed_block {
-		padding: 50px 0;
+		padding: 45px 0 50px;
 	}
 	.pay_and_feed_block_title {
 		font-size: 36px;
@@ -1143,10 +1161,13 @@ body {
 	}
 	.testimonials__block {
 		padding: 50px 0;
-		height: 360px;
+		height: 365px;
 	}
 	.testimonials__slider {
 		padding: 25px 0 25px 0;
+	}
+	.testimonials__icon {
+		margin-top: 5px;
 	}
 	.testimonials__icon img {
 		position: absolute;
@@ -1154,13 +1175,16 @@ body {
 		top: 0%;
 		left: 50%;
 	}
+	.testimonials-button {
+		margin: 10px 0 0px;
+	}
 	.slider_text {
 		font-size: 14px;
-
-		padding: 0 20px;
+		padding: 0 15px;
 	}
 	.slider_title {
 		font-size: 16px;
+		padding: 45px 0 17px;
 	}
 }
 /* карта */
@@ -1578,22 +1602,20 @@ body {
 @media (max-width: 320px) {
 	.footer__form_label {
 		border-bottom: 1px solid #bdbdbd;
-		padding: 20px 0 2px 0;
+		padding: 10px 0 2px 0;
 	}
 	.footer__nav_menu {
-		top: 130px;
+		top: 135px;
 	}
-	.footer__nav_menu li {
-		margin-bottom: 7px;
-	}
+
 	.block-two {
 		flex-direction: column-reverse;
 	}
 	.footer__form {
-		margin-top: 150px;
+		margin-top: 145px;
 	}
 	.footer__sotial {
-		margin-top: 35px;
+		margin-top: 45px;
 		width: 180%;
 		margin-left: -7%;
 	}
@@ -1601,11 +1623,11 @@ body {
 		flex-direction: column;
 	}
 	.footer_btn {
-		top: 80%;
-		left: 5%;
+		top: 80.5%;
+		left: 4.5%;
 	}
 	.footer__logo {
-		padding: 5px 0;
+		padding: 10px 0;
 	}
 	.footer__label {
 		width: 100%;
