@@ -72,6 +72,10 @@ main {
 	font-weight: 900;
 	cursor: default;
 }
+.svg-dots {
+	width: 18px;
+	height: 30px;
+}
 .menu_link {
 	font-family: 'Roboto';
 	font-style: normal;
@@ -111,6 +115,10 @@ main {
 	}
 	main {
 		left: -90px;
+	}
+	.svg-dots {
+		width: 13px;
+		height: 23px;
 	}
 }
 @media (max-width: 1190px) {
@@ -388,7 +396,7 @@ main {
 	}
 
 	.how_it_works_slider_video {
-		padding: 25px 0;
+		padding: 20px 0 30px;
 	}
 }
 @media (max-width: 1190px) {
@@ -414,13 +422,17 @@ main {
 		left: -15px;
 	}
 	.how_it_works_slider_video {
-		padding: 0px 0 25px;
+		padding: 5px 0 25px;
 	}
 	.how_it_works_block {
 		flex-direction: column-reverse;
 	}
 	.how_it_works_slider {
-		width: 100%;
+		width: 103%;
+	}
+	.how_it_works_text {
+		padding: 38px 0 0 0;
+		margin-left: -5px;
 	}
 	.how_it_works_title {
 		width: 100%;
@@ -459,8 +471,12 @@ main {
 	}
 }
 @media (max-width: 320px) {
+	.how_it_works {
+		margin: 0 0 0 5px;
+		padding-top: 94px;
+	}
 	.how_it_works_text h3 {
-		font-size: 16px;
+		font-size: 14px;
 	}
 	.how_it_works_text p {
 		font-size: 12px;
@@ -470,10 +486,10 @@ main {
 		flex-direction: column-reverse;
 	}
 	.how_it_works_slider {
-		width: 100%;
+		width: 110%;
 	}
 	.how_it_works_slider_video {
-		padding: 0;
+		padding: 5px 0 0 0;
 		width: 106%;
 	}
 	.how_it_works_title {
@@ -483,7 +499,11 @@ main {
 	.title__zoo {
 		font-weight: 900;
 		font-size: 24px;
-		padding: 30px 0;
+		padding: 35px 0 20px;
+	}
+	.how_it_works_text {
+		padding: 5px 0 0 0;
+		margin-left: 0px;
 	}
 }
 .iframe-big {
@@ -724,6 +744,11 @@ main {
 	}
 }
 @media (max-width: 640px) {
+	.big {
+		transform: scale(1.25);
+		margin: 0 0 15px;
+		background: linear-gradient(to right, #07eee0, #df496d);
+	}
 	.btn {
 		margin-bottom: 74px;
 		margin-top: 20px;
@@ -1005,8 +1030,8 @@ main {
 		padding-right: 10px;
 	}
 	.favorite_block_slider {
-		top: 10px;
-		left: -40px;
+		top: 15px;
+		left: -48px;
 	}
 	.slider_img_img {
 		width: 100px;
@@ -1027,11 +1052,14 @@ main {
 	.slider_next {
 		left: 45%;
 
-		top: 105%;
+		top: 104%;
 	}
 	.slider_prev {
 		left: 45%;
 		top: -1%;
+	}
+	.dots {
+		margin: 0 6px 100px 0px;
 	}
 }
 @media (max-width: 1190px) {
@@ -1042,7 +1070,7 @@ main {
 }
 @media (max-width: 640px) {
 	.favorite_block_slider {
-		top: 85px;
+		top: 83px;
 		left: -10px;
 	}
 	.dots {
@@ -1083,6 +1111,9 @@ main {
 	}
 }
 @media (max-width: 320px) {
+	.big {
+		transform: scale(1.4);
+	}
 	.dots {
 		margin: 18px 5px 50px 0;
 	}
@@ -1090,8 +1121,8 @@ main {
 		padding-right: 10px;
 	}
 	.favorite_block_slider {
-		top: 55px;
-		left: 10px;
+		top: 60px;
+		left: 5px;
 	}
 	.favorite_block_slider {
 		padding-top: 50px;
@@ -1115,14 +1146,7 @@ main {
 	.slider_next {
 		left: 28%;
 	}
-	.slider_next svg {
-		width: 23px;
-		height: 13px;
-	}
-	.slider_prev svg {
-		width: 23px;
-		height: 13px;
-	}
+
 	.slider_prev {
 		left: 28%;
 	}
@@ -1337,17 +1361,24 @@ main {
 	}
 	.footer__form_label {
 		border-bottom: 1px solid #bdbdbd;
-		padding: 0px 0 10px 0;
+		padding: 15px 0 0px 0;
+	}
+	.footer__sotial {
+		margin-left: 10px;
 	}
 	.footer_btn {
 		position: absolute;
 		bottom: 37%;
+		left: 51%;
 	}
 	.block-two_header {
 		padding-top: 80px;
 	}
 	.footer__logo {
 		padding: 60px 0 65px;
+	}
+	.rsscool {
+		padding: 25px 0 70px 0;
 	}
 }
 @media (max-width: 840px) {
@@ -1387,11 +1418,14 @@ main {
 	}
 }
 @media (max-width: 640px) {
+	.footer__logo {
+		padding: 55px 0 65px;
+	}
 	.footer__nav_menu {
 		display: inline;
 		flex-direction: column;
 		position: absolute;
-		top: 175px;
+		top: 170px;
 		left: 0;
 	}
 	.footer__form {
@@ -1409,23 +1443,23 @@ main {
 	.footer_btn {
 		position: absolute;
 		top: 9%;
-		right: 0%;
+		left: 55%;
 	}
 	.sotial-title {
 		padding: 0px 0 35px 0;
 	}
 	.footer__sotial {
-		margin-left: 0px;
-		margin-top: -5px;
+		margin-left: -10px;
+		margin-top: -15px;
 	}
 	.rsscool {
-		padding: 30px 0 70px 0;
+		padding: 35px 0 70px 0;
 	}
 }
 @media (max-width: 320px) {
 	.footer__sotial {
 		margin-left: -10px;
-		margin-top: 55px;
+		margin-top: 40px;
 		width: 150%;
 	}
 	.footer__form_label-btn {
@@ -1434,6 +1468,7 @@ main {
 	}
 	.footer__nav_menu {
 		top: 135px;
+		left: 10px;
 	}
 	.block-two {
 		flex-direction: column-reverse;
@@ -1444,7 +1479,7 @@ main {
 	.footer__header {
 		flex-direction: column;
 
-		padding: 42px 0 98px;
+		padding: 45px 0 98px 10px;
 	}
 	.footer_btn {
 		top: 76.5%;
