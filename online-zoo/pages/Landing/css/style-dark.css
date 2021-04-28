@@ -44,7 +44,7 @@ body {
 	overflow: hidden;
 }
 .header {
-	background: #ffffff;
+	background: #333333;
 	box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
 }
 .header_row {
@@ -52,6 +52,9 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 22px 0 18px 0;
+}
+.header_logo svg {
+	fill: #fefefe;
 }
 .header_check {
 	position: relative;
@@ -72,7 +75,7 @@ body {
 	font-size: 16px;
 	line-height: 19px;
 	text-decoration: none;
-	color: #333333;
+	color: #fefefe;
 	padding: 0px 42px;
 }
 .icon-menu {
@@ -310,7 +313,7 @@ body {
 	appearance: none;
 	outline: none;
 	overflow: hidden;
-	background-color: #f2f2f2;
+	background-color: transparent;
 	height: 10px;
 }
 
@@ -320,7 +323,7 @@ body {
 }
 
 .input-range::-webkit-slider-thumb {
-	background: #333333;
+	background: #fefefe;
 	cursor: pointer;
 	width: 62px;
 	margin-top: -3px;
@@ -651,8 +654,8 @@ body {
 .how_it_works {
 	display: flex;
 	justify-content: center;
-	background: #f2f2f2;
-	border: 1px solid #f2f2f2;
+	background: #3c3c3c;
+	border: 1px solid #3c3c3c;
 }
 .how_it_works_block {
 	display: flex;
@@ -668,7 +671,7 @@ body {
 	font-weight: 700;
 	font-size: 48px;
 	line-height: 56px;
-	color: #333333;
+	color: #fefefe;
 	align-self: flex-start;
 }
 .how_it_works_text {
@@ -676,7 +679,7 @@ body {
 	font-family: 'Roboto';
 	font-size: 14px;
 	line-height: 16px;
-	color: #4f4f4f;
+	color: #fefefe;
 }
 .how_it_works_input {
 	display: flex;
@@ -684,14 +687,16 @@ body {
 	align-items: center;
 	padding-top: 30px;
 }
-
+.how_it_works_input .label-title {
+	color: #fefefe;
+}
 .label-title span {
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: 900;
 	font-size: 24px;
 	line-height: 28px;
-	color: #333333;
+	color: #fefefe;
 }
 
 @media (max-width: 1200px) {
@@ -754,7 +759,7 @@ body {
 
 /* блок с иконками  */
 .mission {
-	background: #e5e5e5;
+	background: #4f4f4f;
 }
 
 .mission_block {
@@ -776,13 +781,13 @@ body {
 	font-weight: 900;
 	font-size: 20px;
 	line-height: 23px;
-	color: #333333;
+	color: #fefefe;
 }
 .mission_block_item_text {
 	align-self: flex-start;
 	font-size: 14px;
 	line-height: 16px;
-	color: #4f4f4f;
+	color: #fefefe;
 }
 @media (max-width: 1200px) {
 	.mission_block {
@@ -825,7 +830,7 @@ body {
 }
 /* блок слайдер */
 .favorite {
-	background: #f2f2f2;
+	background: #3c3c3c;
 }
 .favorite_block {
 	display: flex;
@@ -838,7 +843,7 @@ body {
 	font-weight: 700;
 	font-size: 48px;
 	line-height: 56px;
-	color: #333333;
+	color: #fefefe;
 }
 .favorite_block_slider {
 	width: 100%;
@@ -851,6 +856,9 @@ body {
 }
 .slider_dots {
 	background: transparent;
+}
+.slider_dots svg {
+	fill: #fefefe;
 }
 .slider_next {
 	position: absolute;
@@ -965,7 +973,7 @@ body {
 /* блок с кругами */
 
 .pay_and_feed {
-	background: #e5e5e5;
+	background: #4f4f4f;
 }
 .pay_and_feed_block {
 	display: flex;
@@ -980,7 +988,7 @@ body {
 	font-size: 48px;
 	line-height: 56px;
 	text-align: center;
-	color: #333333;
+	color: #fefefe;
 }
 .pay_and_feed_block_text {
 	font-family: Roboto;
@@ -989,7 +997,7 @@ body {
 	font-size: 14px;
 	line-height: 16px;
 	text-align: center;
-	color: #4f4f4f;
+	color: #fefefe;
 	padding: 30px 0;
 }
 .pay_and_feed_block_icons {
@@ -1014,7 +1022,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background: #e5e5e5;
+	background: #4f4f4f;
 	border-radius: 50%;
 	width: 240px;
 	height: 240px;
@@ -1028,7 +1036,7 @@ body {
 	font-size: 20px;
 	line-height: 23px;
 	text-align: center;
-	color: #4f4f4f;
+	color: #f2f2f2;
 	width: 55%;
 }
 .pay_and_feed_block_button {
@@ -1083,7 +1091,7 @@ body {
 
 /* новый слойдер с фитбеком */
 .testimonials {
-	background: #f2f2f2;
+	background: #3c3c3c;
 }
 .testimonials__block {
 	width: 49%;
@@ -1092,7 +1100,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	height: 310px;
-	background: #fefefe;
+	background: #4f4f4f;
 	box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
 	border-radius: 5px;
 }
@@ -1126,14 +1134,14 @@ body {
 	font-size: 20px;
 	line-height: 23px;
 	text-align: center;
-	color: #333333;
+	color: #f2f2f2;
 	padding: 17px 0;
 }
 .slider_text {
 	font-family: Roboto;
 	font-size: 14px;
 	line-height: 16px;
-	color: #4f4f4f;
+	color: #f2f2f2;
 	padding: 0 73px;
 }
 
@@ -1190,7 +1198,7 @@ body {
 /* карта */
 
 .map {
-	background: #e3e3e3;
+	background: #4f4f4f;
 }
 .map__block {
 	display: flex;
@@ -1205,7 +1213,7 @@ body {
 	font-size: 48px;
 	line-height: 56px;
 	text-align: center;
-	color: #333333;
+	color: #fefefe;
 }
 .map__map {
 	padding-top: 60px;
