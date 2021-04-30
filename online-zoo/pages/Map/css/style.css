@@ -38,24 +38,14 @@ body {
 }
 .theme-light {
 	--bg-header-color: #fff;
-	--bg-primary-color: #fbfbfb;
 	--bg-secondary-color: #f2f2f2;
-	--bg-testimonial-color: #fefefe;
-	--bg-map-tooltip-color: #fefefe;
-	--bg-pages-color: #fbfbfb;
-	--bg-mission-color: #e5e5e5;
 	--primary-color: #333;
 	--text-primary-color: #4f4f4f;
 	color: var(--text-primary-color);
 }
 .theme-dark {
 	--bg-header-color: #333;
-	--bg-primary-color: #333;
 	--bg-secondary-color: #4f4f4f;
-	--bg-testimonial-color: #3c3c3c;
-	--bg-map-tooltip-color: #333;
-	--bg-pages-color: #4f4f4f;
-	--bg-mission-color: #4f4f4f;
 	--primary-color: #fefefe;
 	--text-primary-color: #f2f2f2;
 	color: var(--text-primary-color);

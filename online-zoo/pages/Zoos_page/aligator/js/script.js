@@ -46,3 +46,20 @@ header__list.onclick = function () {
     header__list.classList.remove('active');
     back.classList.toggle('lock');
 }
+//переключатель темы
+
+const button = document.querySelector('.header_check img');
+const wrapper = document.getElementById('theme_css');
+button.addEventListener('click', switchTheme);
+
+function switchTheme() {
+if (wrapper.classList.contains('theme-light')) {
+  wrapper.classList.remove('theme-light');
+  wrapper.classList.add('theme-dark');
+  button.src = '../../../assets/Landing/images/swich-dark.png';
+} else {
+  wrapper.classList.remove('theme-dark');
+  wrapper.classList.add('theme-light');
+  button.src = '../../../assets/Landing/images/swich-light.png';
+}
+}
