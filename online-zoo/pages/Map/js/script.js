@@ -46,3 +46,23 @@ header__list.onclick = function () {
     header__list.classList.remove('active');
     back.classList.toggle('lock');
 }
+
+// переключатель темы
+  
+const map = document.querySelector('.map__map img');
+const button = document.querySelector('.header_check img');
+const wrapper = document.getElementById('theme_css');
+button.addEventListener('click', switchTheme)
+function switchTheme() {
+if (wrapper.classList.contains('theme-light')) {
+  wrapper.classList.remove('theme-light');
+  wrapper.classList.add('theme-dark');
+  map.src = '../../assets/Landing/images/map-dark.png';
+  button.src = '../../assets/Landing/images/swich-dark.png';
+} else {
+  wrapper.classList.remove('theme-dark');
+  wrapper.classList.add('theme-light');
+  map.src = '../../assets/Landing/images/map.png';
+  button.src = '../../assets/Landing/images/swich-light.png';
+}
+}
