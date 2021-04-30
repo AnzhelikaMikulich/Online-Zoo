@@ -36,6 +36,30 @@ body {
 	width: 100%;
 	font-size: 14px;
 }
+.theme-light {
+	--bg-header-color: #fff;
+	--bg-primary-color: #fbfbfb;
+	--bg-secondary-color: #f2f2f2;
+	--bg-testimonial-color: #fefefe;
+	--bg-map-tooltip-color: #fefefe;
+	--bg-pages-color: #fbfbfb;
+	--bg-mission-color: #e5e5e5;
+	--primary-color: #333;
+	--text-primary-color: #4f4f4f;
+	color: var(--text-primary-color);
+}
+.theme-dark {
+	--bg-header-color: #333;
+	--bg-primary-color: #333;
+	--bg-secondary-color: #4f4f4f;
+	--bg-testimonial-color: #3c3c3c;
+	--bg-map-tooltip-color: #333;
+	--bg-pages-color: #4f4f4f;
+	--bg-mission-color: #4f4f4f;
+	--primary-color: #fefefe;
+	--text-primary-color: #f2f2f2;
+	color: var(--text-primary-color);
+}
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -44,7 +68,7 @@ body {
 	overflow: hidden;
 }
 .header {
-	background: #ffffff;
+	background: var(--bg-header-color);
 	box-shadow: 0px 4px 8px rgba(44, 101, 77, 0.08);
 }
 .header_row {
@@ -54,10 +78,14 @@ body {
 	padding: 22px 0 18px 0;
 }
 .header_logo svg {
-	fill: #333333;
+	fill: var(--primary-color);
 }
 .header_check {
+	cursor: pointer;
 	position: relative;
+	width: 55px;
+	height: 30px;
+	text-align: center;
 }
 .menu_list {
 	display: flex;
@@ -75,7 +103,7 @@ body {
 	font-size: 16px;
 	line-height: 19px;
 	text-decoration: none;
-	color: #333333;
+	color: var(--primary-color);
 	padding: 0px 42px;
 }
 .icon-menu {
@@ -313,7 +341,7 @@ body {
 	appearance: none;
 	outline: none;
 	overflow: hidden;
-	background-color: #f2f2f2;
+	background-color: transparent;
 	height: 10px;
 }
 
@@ -323,7 +351,7 @@ body {
 }
 
 .input-range::-webkit-slider-thumb {
-	background: #333333;
+	background: var(--primary-color);
 	cursor: pointer;
 	width: 62px;
 	margin-top: -3px;
@@ -337,7 +365,7 @@ body {
 }
 
 .input-range::-moz-range-thumb {
-	background: #333333;
+	background: var(--primary-color);
 	cursor: pointer;
 	width: 62px;
 	height: 10px;
@@ -654,8 +682,8 @@ body {
 .how_it_works {
 	display: flex;
 	justify-content: center;
-	background: #f2f2f2;
-	border: 1px solid #f2f2f2;
+	background: var(--bg-testimonial-color);
+	border: 1px solid var(--bg-testimonial-color);
 }
 .how_it_works_block {
 	display: flex;
@@ -671,7 +699,7 @@ body {
 	font-weight: 700;
 	font-size: 48px;
 	line-height: 56px;
-	color: #333333;
+	color: var(--primary-color);
 	align-self: flex-start;
 }
 .how_it_works_text {
@@ -679,7 +707,7 @@ body {
 	font-family: 'Roboto';
 	font-size: 14px;
 	line-height: 16px;
-	color: #4f4f4f;
+	color: var(--text-primary-color);
 }
 .how_it_works_input {
 	display: flex;
@@ -694,7 +722,7 @@ body {
 	font-weight: 900;
 	font-size: 24px;
 	line-height: 28px;
-	color: #333333;
+	color: var(--primary-color);
 }
 
 @media (max-width: 1200px) {
@@ -757,7 +785,7 @@ body {
 
 /* блок с иконками  */
 .mission {
-	background: #e5e5e5;
+	background: var(--bg-mission-color);
 }
 
 .mission_block {
@@ -779,13 +807,13 @@ body {
 	font-weight: 900;
 	font-size: 20px;
 	line-height: 23px;
-	color: #333333;
+	color: var(--primary-color);
 }
 .mission_block_item_text {
 	align-self: flex-start;
 	font-size: 14px;
 	line-height: 16px;
-	color: #4f4f4f;
+	color: var(--text-primary-color);
 }
 @media (max-width: 1200px) {
 	.mission_block {
@@ -828,7 +856,7 @@ body {
 }
 /* блок слайдер */
 .favorite {
-	background: #f2f2f2;
+	background: var(--bg-testimonial-color);
 }
 .favorite_block {
 	display: flex;
@@ -841,7 +869,7 @@ body {
 	font-weight: 700;
 	font-size: 48px;
 	line-height: 56px;
-	color: #333333;
+	color: var(--primary-color);
 }
 .favorite_block_slider {
 	width: 100%;
@@ -856,7 +884,7 @@ body {
 	background: transparent;
 }
 .slider_dots svg {
-	fill: #333333;
+	fill: var(--primary-color);
 }
 .slider_next {
 	position: absolute;
@@ -971,7 +999,7 @@ body {
 /* блок с кругами */
 
 .pay_and_feed {
-	background: #e5e5e5;
+	background: var(--bg-mission-color);
 }
 .pay_and_feed_block {
 	display: flex;
@@ -986,7 +1014,7 @@ body {
 	font-size: 48px;
 	line-height: 56px;
 	text-align: center;
-	color: #333333;
+	color: var(--primary-color);
 }
 .pay_and_feed_block_text {
 	font-family: Roboto;
@@ -995,7 +1023,7 @@ body {
 	font-size: 14px;
 	line-height: 16px;
 	text-align: center;
-	color: #4f4f4f;
+	color: var(--text-primary-color);
 	padding: 30px 0;
 }
 .pay_and_feed_block_icons {
@@ -1020,7 +1048,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background: #e5e5e5;
+	background: var(--bg-mission-color);
 	border-radius: 50%;
 	width: 240px;
 	height: 240px;
@@ -1034,7 +1062,7 @@ body {
 	font-size: 20px;
 	line-height: 23px;
 	text-align: center;
-	color: #4f4f4f;
+	color: var(--text-primary-color);
 	width: 55%;
 }
 .pay_and_feed_block_button {
@@ -1089,7 +1117,7 @@ body {
 
 /* новый слойдер с фитбеком */
 .testimonials {
-	background: #f2f2f2;
+	background: var(--bg-testimonial-color);
 }
 .testimonials__block {
 	width: 49%;
@@ -1098,7 +1126,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	height: 310px;
-	background: #fefefe;
+	background: var(--bg-pages-color);
 	box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.1);
 	border-radius: 5px;
 }
@@ -1132,14 +1160,14 @@ body {
 	font-size: 20px;
 	line-height: 23px;
 	text-align: center;
-	color: #333333;
+	color: var(--primary-color);
 	padding: 17px 0;
 }
 .slider_text {
 	font-family: Roboto;
 	font-size: 14px;
 	line-height: 16px;
-	color: #4f4f4f;
+	color: var(--text-primary-color);
 	padding: 0 73px;
 }
 
@@ -1196,7 +1224,7 @@ body {
 /* карта */
 
 .map {
-	background: #e3e3e3;
+	background: var(--bg-mission-color);
 }
 .map__block {
 	display: flex;
@@ -1211,7 +1239,7 @@ body {
 	font-size: 48px;
 	line-height: 56px;
 	text-align: center;
-	color: #333333;
+	color: var(--primary-color);
 }
 .map__map {
 	padding-top: 60px;
@@ -1668,7 +1696,7 @@ body {
 	margin: 0 auto;
 	box-shadow: 2px 4px 15px rgba(6, 12, 70, 0.15);
 	border-radius: 8px;
-	background: #fefefe;
+	background: var(--bg-map-tooltip-color);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -1700,7 +1728,7 @@ body {
 	font-weight: 900;
 	font-size: 18px;
 	line-height: 21px;
-	color: #333333;
+	color: var(--primary-color);
 	padding-bottom: 7px;
 }
 
@@ -1714,7 +1742,7 @@ body {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 800;
-	color: #333333;
+	color: var(--primary-color);
 }
 @media (max-width: 640px) {
 	.popap-three-four {
