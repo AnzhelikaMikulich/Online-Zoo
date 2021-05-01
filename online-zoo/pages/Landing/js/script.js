@@ -1,39 +1,28 @@
-// собираем все якоря; устанавливаем время анимации и количество кадров
+// навигация по странице
 const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
 	animationTime = 200,
 	framesCount = 20;
 
 anchors.forEach(function (item) {
-	// каждому якорю присваиваем обработчик события
 	item.addEventListener('click', function (e) {
-		// убираем стандартное поведение
 		e.preventDefault();
-
-		// для каждого якоря берем соответствующий ему элемент и определяем его координату Y
 		let coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top + window.pageYOffset;
-
-		// запускаем интервал, в котором
 		let scroller = setInterval(function () {
-			// считаем на сколько скроллить за 1 такт
 			let scrollBy = coordY / framesCount;
-
-			// если к-во пикселей для скролла за 1 такт больше расстояния до элемента
-			// и дно страницы не достигнуто
 			if (
 				scrollBy > window.pageYOffset - coordY &&
 				window.innerHeight + window.pageYOffset < document.body.offsetHeight
 			) {
-				// то скроллим на к-во пикселей, которое соответствует одному такту
 				window.scrollBy(0, scrollBy);
 			} else {
-				// иначе добираемся до элемента и выходим из интервала
 				window.scrollTo(0, coordY);
 				clearInterval(scroller);
 			}
-			// время интервала равняется частному от времени анимации и к-ва кадров
 		}, animationTime / framesCount);
 	});
 });
+
+
 // меню-бургер
 const header__burger = document.querySelector('.icon-menu');
 const header_menu = document.querySelector('.menu_body');
@@ -70,3 +59,25 @@ function switchTheme() {
 		button.src = '../../assets/Landing/images/swich-light.png';
 	}
 }
+//СЛАЙДЕР Pets in Zoo
+let ofset = 0;
+const slider_body = document.querySelector('#pets-in-zoo');
+const slider_next = document.querySelector('.slider_next_pets-in-zoo');
+const slider_prev = document.querySelector('.slider_prev_pets-in-zoo');
+
+slider_next.addEventListener('click',function() {
+    ofset = ofset + 297;
+    if(ofset > 1200){
+        ofset = 0
+    }
+    slider_body.style.left = -ofset + 'px'
+
+})
+slider_prev.addEventListener('click',function() {
+    ofset = ofset - 308;
+    if(ofset < 0){
+        ofset = 1200
+    }
+    slider_body.style.left = -ofset + 'px'
+    
+})

@@ -874,11 +874,21 @@ body {
 .favorite_block_slider {
 	width: 100%;
 	padding-top: 35px;
+	overflow: hidden;
 }
 .slider_body {
 	z-index: 1;
 	display: flex;
 	justify-content: space-between;
+}
+.slider_body_pet-in-zoo {
+	display: flex;
+	position: relative;
+	left: 0;
+	transition: all ease 1s;
+}
+.slider_body_pet-in-zoo > .slider_item {
+	margin: 0 10px;
 }
 .slider_dots {
 	background: transparent;
@@ -920,6 +930,12 @@ body {
 .slider_img_img:hover::before {
 	transition: 1s ease-in;
 	opacity: 0.5;
+}
+.slider_img_img img {
+	object-fit: cover;
+	width: 278px;
+	height: 399px;
+	border-radius: 5px;
 }
 .slider__effect > .slider_paragr {
 	opacity: 0;
