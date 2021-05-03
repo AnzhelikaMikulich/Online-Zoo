@@ -48,21 +48,29 @@ header__list.onclick = function () {
 }
 
 // переключатель темы
-  
-const map = document.querySelector('.map__map img');
 const button = document.querySelector('.header_check img');
+let darkMode = localStorage.getItem('darkMode');
+const map = document.querySelector('.map__map img');
 const wrapper = document.getElementById('theme_css');
-button.addEventListener('click', switchTheme)
-function switchTheme() {
-if (wrapper.classList.contains('theme-light')) {
+if(darkMode === 'true') {
   wrapper.classList.remove('theme-light');
   wrapper.classList.add('theme-dark');
   map.src = '../../assets/Landing/images/map-dark.png';
   button.src = '../../assets/Landing/images/swich-dark.png';
-} else {
-  wrapper.classList.remove('theme-dark');
-  wrapper.classList.add('theme-light');
-  map.src = '../../assets/Landing/images/map.png';
-  button.src = '../../assets/Landing/images/swich-light.png';
 }
+button.addEventListener('click', switchTheme);
+function switchTheme() {
+	if (wrapper.classList.contains('theme-light')) {
+		wrapper.classList.remove('theme-light');
+		wrapper.classList.add('theme-dark');
+		map.src = '../../assets/Landing/images/map-dark.png';
+		button.src = '../../assets/Landing/images/swich-dark.png';
+    localStorage.setItem('darkMode', 'true');
+	} else {
+		wrapper.classList.remove('theme-dark');
+		wrapper.classList.add('theme-light');
+		map.src = '../../assets/Landing/images/map.png';
+		button.src = '../../assets/Landing/images/swich-light.png';
+    localStorage.setItem('darkMode', 'false');
+	}
 }

@@ -22,7 +22,6 @@ anchors.forEach(function (item) {
 	});
 });
 
-
 // меню-бургер
 const header__burger = document.querySelector('.icon-menu');
 const header_menu = document.querySelector('.menu_body');
@@ -41,43 +40,63 @@ header__list.onclick = function () {
 };
 
 // переключатель темы
-  
-	const map = document.querySelector('.map__map img');
-	const button = document.querySelector('.header_check img');
-	const wrapper = document.getElementById('theme_css');
-  button.addEventListener('click', switchTheme)
+const button = document.querySelector('.header_check img');
+let darkMode = localStorage.getItem('darkMode');
+const map = document.querySelector('.map__map img');
+const wrapper = document.getElementById('theme_css');
+if(darkMode === 'true') {
+  wrapper.classList.remove('theme-light');
+  wrapper.classList.add('theme-dark');
+  map.src = '../../assets/Landing/images/map-dark.png';
+  button.src = '../../assets/Landing/images/swich-dark.png';
+}
+button.addEventListener('click', switchTheme);
 function switchTheme() {
 	if (wrapper.classList.contains('theme-light')) {
 		wrapper.classList.remove('theme-light');
 		wrapper.classList.add('theme-dark');
 		map.src = '../../assets/Landing/images/map-dark.png';
 		button.src = '../../assets/Landing/images/swich-dark.png';
+    localStorage.setItem('darkMode', 'true');
 	} else {
 		wrapper.classList.remove('theme-dark');
 		wrapper.classList.add('theme-light');
 		map.src = '../../assets/Landing/images/map.png';
 		button.src = '../../assets/Landing/images/swich-light.png';
+    localStorage.setItem('darkMode', 'false');
 	}
 }
+
 //СЛАЙДЕР Pets in Zoo
 let ofset = 0;
 const slider_body = document.querySelector('#pets-in-zoo');
 const slider_next = document.querySelector('.slider_next_pets-in-zoo');
 const slider_prev = document.querySelector('.slider_prev_pets-in-zoo');
 
-slider_next.addEventListener('click',function() {
-    ofset = ofset + 297;
-    if(ofset > 1200){
-        ofset = 0
-    }
-    slider_body.style.left = -ofset + 'px'
+slider_next.addEventListener('click', function () {
+	ofset = ofset + 297;
+	if (ofset > 1200) {
+		ofset = 0;
+	}
+	slider_body.style.left = -ofset + 'px';
+});
+slider_prev.addEventListener('click', function () {
+	ofset = ofset - 308;
+	if (ofset < 0) {
+		ofset = 1200;
+	}
+	slider_body.style.left = -ofset + 'px';
+});
 
-})
-slider_prev.addEventListener('click',function() {
-    ofset = ofset - 308;
-    if(ofset < 0){
-        ofset = 1200
-    }
-    slider_body.style.left = -ofset + 'px'
-    
-})
+// работа Input-range
+
+const input = document.querySelectorAll('input[type="range"]');
+const output = document.querySelectorAll('.label-title span')
+
+
+input.forEach((e,i) =>
+	e.addEventListener('input', () => {
+		var newValue = e.value;
+		output[i].innerHTML = `0${newValue}/`;
+	})
+);

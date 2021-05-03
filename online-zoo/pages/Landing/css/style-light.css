@@ -724,7 +724,17 @@ body {
 	line-height: 28px;
 	color: var(--primary-color);
 }
-
+.how_it_works_slider {
+	display: flex;
+	width: 75.5%;
+	height: 323px;
+	overflow: hidden;
+}
+.how_it_works_slider img {
+	object-fit: cover;
+	width: 600px;
+	height: 323px;
+}
 @media (max-width: 1200px) {
 	.how_it_works_block {
 		width: 100%;
