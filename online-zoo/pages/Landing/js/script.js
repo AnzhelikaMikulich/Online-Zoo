@@ -101,8 +101,9 @@ function setLocation(i) {
 		if (el.classList.contains('slider_item_favorite_big')) {
 			el.classList.remove('slider_item_favorite_big');
 		}
-		const elWidth = el.offsetWidth + parseInt(getComputedStyle(el).marginRight.match(/\d+/)[0]);
-		el.style.transform = `translateX(${-(i - 1) * elWidth}px)`;
+		// const elWidth = el.offsetWidth
+		console.log((el))
+		el.style.transform = `translateX(${-(i - 2) * el.offsetWidth}px)`;
 	});
 	favItems[i - 1].classList.add('slider_item_favorite_big');
 }

@@ -124,7 +124,11 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-
+@media (max-width: 1670px) {
+	.container_big {
+		max-width: 1200px;
+	}
+}
 @media (max-width: 1200px) {
 	.container_big {
 		max-width: 900px;
@@ -495,6 +499,14 @@ body {
 	position: absolute;
 	top: 52%;
 	left: 10%;
+}
+.favorite__dots {
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	width: 850px;
+	top: 0;
+	left: 20%;
 }
 
 .slider_item_favorite_big img {
