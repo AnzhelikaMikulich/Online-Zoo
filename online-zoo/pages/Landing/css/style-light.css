@@ -124,6 +124,7 @@ body {
 	max-width: 1200px;
 	margin: 0 auto;
 }
+
 @media (max-width: 1200px) {
 	.container_big {
 		max-width: 900px;
@@ -298,11 +299,14 @@ body {
 }
 
 .favorite_animal_slider_img {
+	overflow: hidden;
+	height: 352px;
 	position: relative;
 	left: 30%;
 	display: flex;
 	z-index: 1;
 	justify-content: space-between;
+	align-items: center;
 }
 .favorite_animal_slider img {
 	width: 140px;
@@ -311,7 +315,7 @@ body {
 	border-radius: 5px;
 }
 .slider_item_favorite {
-	padding: 0 4px;
+	padding: 0 20px;
 	position: relative;
 }
 .slider_item_favorite > .slider__effect > .slider_paragr {
@@ -468,7 +472,7 @@ body {
 }
 .input-favorite {
 	position: absolute;
-	bottom: -70%;
+	bottom: -25%;
 	right: 27%;
 }
 .input-favorite .input-range {
@@ -492,9 +496,16 @@ body {
 	top: 52%;
 	left: 10%;
 }
-.slider_item_favorite_big {
-	transform: scale(1.7);
-	margin: 0 46px;
+
+.slider_item_favorite_big img {
+	width: 245px;
+	height: 352px;
+}
+.slider_item_favorite_big .slider_paragr {
+	font-size: 16px;
+}
+.slider_item_favorite_big .text-button {
+	font-size: 16px;
 }
 .sotial {
 	padding-top: 15px;
@@ -516,7 +527,12 @@ body {
 .vk {
 	background-image: url(../../../assets/Landing/icons/333.svg);
 }
-
+@media (max-width: 1900px) {
+	.favorite_animal_block {
+		width: 80%;
+		margin: 150px 210px;
+	}
+}
 @media (max-width: 1200px) {
 	.favorite_animal_block {
 		width: 88%;
@@ -524,7 +540,7 @@ body {
 	}
 	.favorite_animal_slider {
 		width: 70.5%;
-		bottom: 70px;
+		bottom: 180px;
 		right: -218px;
 	}
 	.favorite_animal_slider_img {
@@ -541,7 +557,7 @@ body {
 		left: -4%;
 	}
 	.favorite_animal_sotial {
-		margin-top: -8%;
+		margin-top: -20%;
 	}
 	.favorite_animal_slider img {
 		width: 180px;
@@ -549,8 +565,16 @@ body {
 		object-fit: cover;
 		border-radius: 5px;
 	}
-	.slider_item_favorite_big {
-		transform: scale(1.3);
+
+	.slider_item_favorite_big img {
+		width: 245px;
+		height: 352px;
+	}
+	.slider_item_favorite_big .slider_paragr {
+		font-size: 14px;
+	}
+	.slider_item_favorite_big .text-button {
+		font-size: 14px;
 	}
 }
 @media (max-width: 900px) {
