@@ -101,8 +101,6 @@ function setLocation(i) {
 		if (el.classList.contains('slider_item_favorite_big')) {
 			el.classList.remove('slider_item_favorite_big');
 		}
-		// const elWidth = el.offsetWidth
-		console.log((el))
 		el.style.transform = `translateX(${-(i - 2) * el.offsetWidth}px)`;
 	});
 	favItems[i - 1].classList.add('slider_item_favorite_big');
@@ -110,21 +108,50 @@ function setLocation(i) {
 
 //Pets in Zoo Slider
 let ofset = 0;
+let counter = 0;
 const petsSlider = document.querySelector('#pets-in-zoo');
+const petsItem = petsSlider.querySelectorAll('.slider_img_img');
 const petsSliderNext = document.querySelector('.slider_next_pets-in-zoo');
 const petsSliderPrev = document.querySelector('.slider_prev_pets-in-zoo');
+const petsInput = document.querySelector('.pets-in-zoo_input input');
+const petsOutput = document.querySelector('.pets-in-zoo_input span');
 
 petsSliderNext.addEventListener('click', function () {
-	ofset = ofset + 297;
-	if (ofset > 1200) {
-		ofset = 0;
+	counter = counter + 1;
+	if (counter < 9) {
+		setPetLocation(counter);
+		petsInput.value = counter;
+		petsOutput.innerHTML = `0${counter}/`;
+	} else {
+		counter = 0;
 	}
-	petsSlider.style.left = -ofset + 'px';
 });
+
 petsSliderPrev.addEventListener('click', function () {
-	ofset = ofset - 308;
-	if (ofset < 0) {
-		ofset = 1200;
+	counter = counter - 1;
+	if (counter > 0 && counter < 9) {
+		setPetLocation(counter);
+		petsInput.value = counter;
+		petsOutput.innerHTML = `0${counter}/`;
+	} else {
+		counter = 0;
 	}
-	petsSlider.style.left = -ofset + 'px';
 });
+
+petsInput.addEventListener('change', (e) => {
+	if (e.target.value <= e.target.max && e.target.value >= e.target.min) {
+		setPetLocation(e.target.value);
+	}
+});
+
+function setPetLocation(i) {
+	petsItem.forEach((el) => {
+		if (i < 6) {
+			el.style.transform = `translateX(${-(i - 1) * (el.offsetWidth + 18)}px)`;
+		}
+		if (el.classList.contains('active-pets-in-zoo')) {
+			el.classList.remove('active-pets-in-zoo');
+		}
+		petsItem[i - 1].classList.add('active-pets-in-zoo');
+	});
+}
