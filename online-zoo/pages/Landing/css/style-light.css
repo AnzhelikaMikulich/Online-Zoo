@@ -515,9 +515,13 @@ body {
 }
 .slider_item_favorite_big .slider_paragr {
 	font-size: 16px;
+	opacity: 1;
 }
 .slider_item_favorite_big .text-button {
 	font-size: 16px;
+}
+.slider_item_favorite_big .slider_btn_block {
+	opacity: 1;
 }
 .sotial {
 	padding-top: 15px;
