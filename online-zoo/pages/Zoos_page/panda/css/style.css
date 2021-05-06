@@ -49,6 +49,7 @@ body {
 	color: var(--text-primary-color);
 }
 .wrapper {
+	background-color: var(--bg-secondary-color);
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -124,6 +125,11 @@ main {
 @media (max-width: 1900px) {
 	main {
 		left: 0px;
+	}
+}
+@media (max-width: 1650px) {
+	.container_big {
+		max-width: 1200px;
 	}
 }
 @media (max-width: 1200px) {
