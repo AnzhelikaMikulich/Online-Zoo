@@ -70,3 +70,16 @@ if (wrapper.classList.contains('theme-light')) {
   localStorage.setItem('darkMode', 'false');
 }
 }
+// Video Slider
+const sliderVideo = document.querySelector('.how_it_works_slider')
+console.log(sliderVideo)
+const sliderStopVideo = document.querySelector('.iframe-stop_video')
+const sliderBig = document.querySelector('.iframe-big')
+
+
+sliderVideo.addEventListener('click', (e) => {
+  
+	console.log(e.target)
+
+	
+});

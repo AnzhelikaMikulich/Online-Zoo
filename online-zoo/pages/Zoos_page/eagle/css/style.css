@@ -540,13 +540,22 @@ main {
 	width: 31%;
 	height: 141px;
 }
-.iframe-stop {
+/* .iframe-stop {
 	width: 100%;
 	height: 442px;
 	background-color: #4bd8b5;
 	opacity: 0;
 	position: absolute;
 	top: 0;
+	left: 0;
+} */
+.iframe-stop_video {
+	width: 100%;
+	height: 140px;
+	background-color: #4bd8b5;
+	opacity: 0;
+	position: absolute;
+	bottom: 15%;
 	left: 0;
 }
 
