@@ -156,3 +156,5 @@ function setPetLocation(i) {
 		petsItem[i - 1].classList.add('active-pets-in-zoo');
 	});
 }
+
+
