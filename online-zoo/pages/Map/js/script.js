@@ -173,7 +173,7 @@ mapContainer.addEventListener('click', (e) => {
 function watchOnline(i) {
   
   console.log(i)
-  if (i === 1) {
+  if (i===1) {
     mapButton.href = '../Zoos_page/gorilla/index.html'
   }
   if (i === 2) {
@@ -183,8 +183,6 @@ function watchOnline(i) {
     mapButton.href="../Zoos_page/aligator/index.html"
   }
   if (i === 4) {
-    mapButton.href="../Zoos_page/eagle/index.html"
-  }else{
     mapButton.href="../Zoos_page/eagle/index.html"
   }
   
