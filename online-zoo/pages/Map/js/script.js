@@ -140,16 +140,16 @@ mapContainer.addEventListener('click', (e) => {
 
 function watchOnline(i) {
 	console.log(i);
-	if (i === 1) {
+	if (i == 1) {
 		mapButton.href = '../Zoos_page/gorilla/index.html';
 	}
-	if (i === 2) {
+	if (i == 2) {
 		mapButton.href = '../Zoos_page/panda/index.html';
 	}
-	if (i === 3) {
+	if (i == 3) {
 		mapButton.href = '../Zoos_page/aligator/index.html';
 	}
-	if (i === 4) {
+	if (i == 4) {
 		mapButton.href = '../Zoos_page/eagle/index.html';
 	}
 }
