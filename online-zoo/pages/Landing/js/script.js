@@ -134,13 +134,14 @@ petsSliderPrev.addEventListener('click', function () {
 		petsInput.value = counter;
 		petsOutput.innerHTML = `0${counter}/`;
 	} else {
-		counter = 0;
+		counter = 9;
 	}
 });
 
 petsInput.addEventListener('change', (e) => {
 	if (e.target.value <= e.target.max && e.target.value >= e.target.min) {
-		setPetLocation(e.target.value);
+		counter = e.target.value
+		setPetLocation(counter);
 	}
 });
 

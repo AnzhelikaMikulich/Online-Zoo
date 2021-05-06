@@ -112,6 +112,11 @@ body {
 	margin: 0 auto;
 	position: relative;
 }
+@media (max-width: 1900px) {
+	.container_big {
+		max-width: 1200px;
+	}
+}
 @media (max-width: 1200px) {
 	.container_big {
 		max-width: 900px;
@@ -617,7 +622,10 @@ body {
 	transition: 0.5s ease-in-out;
 	fill: #49d6df;
 }
-
+.active-map-slide {
+	transform: scale(1.25);
+	background: linear-gradient(to right, #07eee0, #df496d);
+}
 .slider_title {
 	font-family: Roboto;
 	font-weight: 900;
@@ -633,6 +641,16 @@ body {
 	line-height: 16px;
 	color: #4f4f4f;
 	padding: 0 73px;
+}
+@media (max-width: 1600px) {
+	.slider_prev {
+		top: 65%;
+		left: 20px;
+	}
+	.slider_next {
+		top: 65%;
+		right: 10px;
+	}
 }
 @media (max-width: 1200px) {
 	.favorite_block {
@@ -755,6 +773,7 @@ body {
 .map {
 	background: var(--bg-secondary-color);
 	padding-top: 3px;
+	margin-top: -3px;
 }
 .map__block {
 	display: flex;
@@ -777,7 +796,6 @@ body {
 
 .map__map > img {
 	width: 100%;
-	height: 380px;
 }
 .svg__animals {
 	height: 94px;
@@ -785,7 +803,7 @@ body {
 }
 .map__animals_one {
 	position: absolute;
-	top: 23%;
+	top: 15%;
 	left: 10%;
 	cursor: pointer;
 }
@@ -797,19 +815,19 @@ body {
 }
 .map__animals_two {
 	position: absolute;
-	top: 28%;
+	top: 17%;
 	left: 20.5%;
 	cursor: pointer;
 }
 .map__animals_three {
 	position: absolute;
-	top: 43.5%;
+	top: 38%;
 	left: 47.5%;
 	cursor: pointer;
 }
 .map__animals_four {
 	position: absolute;
-	top: 26%;
+	top: 18%;
 	right: 20%;
 	cursor: pointer;
 }
@@ -821,6 +839,9 @@ body {
 .map__animals_two:hover svg path,
 .map__animals_three:hover svg path,
 .map__animals_four:hover svg path {
+	fill: #eb5757;
+}
+.active-map__animals svg path {
 	fill: #eb5757;
 }
 @media (max-width: 1200px) {
