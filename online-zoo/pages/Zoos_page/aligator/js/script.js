@@ -70,3 +70,15 @@ if (wrapper.classList.contains('theme-light')) {
   localStorage.setItem('darkMode', 'false');
 }
 }
+// Video Slider
+const sliderVideo = document.querySelector('.how_it_works_slider')
+const sliderStopVideo = document.querySelector('.iframe-stop_video')
+const sliderBig = document.querySelector('.iframe-big')
+console.log(sliderVideo)
+
+sliderVideo.addEventListener('click', (e) => {
+  let smallVideoLink = e.target.previousElementSibling.getAttribute('src');
+  let sliderBigVideoLink = sliderBig.getAttribute('src');
+  e.target.previousElementSibling.setAttribute('src', sliderBigVideoLink);
+  sliderBig.setAttribute('src', smallVideoLink);
+});

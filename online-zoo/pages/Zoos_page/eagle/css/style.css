@@ -384,6 +384,7 @@ main {
 	display: flex;
 	width: 100%;
 	justify-content: space-between;
+	position: relative;
 }
 .how_it_works_slider {
 	position: relative;
@@ -537,7 +538,7 @@ main {
 	height: 442px;
 }
 .iframe {
-	width: 31%;
+	width: 98%;
 	height: 141px;
 }
 .iframe-stop {
@@ -550,9 +551,13 @@ main {
 	left: 0;
 }
 .iframe-stop_video {
+	width: 31%;
+	height: 141px;
 	background-color: #4bd8b5;
-	opacity: 1;
+	opacity: 0;
 	z-index: 999;
+	top: 0;
+	position: absolute;
 }
 
 @media (max-width: 1200px) {
