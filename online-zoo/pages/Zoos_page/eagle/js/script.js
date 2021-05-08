@@ -72,7 +72,6 @@ if (wrapper.classList.contains('theme-light')) {
 }
 // Video Slider
 const sliderVideo = document.querySelector('.how_it_works_slider')
-console.log(sliderVideo)
 const sliderStopVideo = document.querySelector('.iframe-stop_video')
 const sliderBig = document.querySelector('.iframe-big')
 
@@ -80,6 +79,10 @@ const sliderBig = document.querySelector('.iframe-big')
 sliderVideo.addEventListener('click', (e) => {
   
 	console.log(e.target)
-
-	
+  let smallVideoLink = e.target.getAttribute('src');
+  let sliderBigVideoLink = sliderBig.getAttribute('src');
+	console.log(smallVideoLink)
+  console.log(sliderBigVideoLink)
+  e.target.setAttribute('src', sliderBigVideoLink);
+  sliderBig.setAttribute('src', smallVideoLink);
 });

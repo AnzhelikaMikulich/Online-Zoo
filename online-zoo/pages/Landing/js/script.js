@@ -145,10 +145,14 @@ petsInput.addEventListener('change', (e) => {
 	}
 });
 
+
 function setPetLocation(i) {
 	petsItem.forEach((el) => {
-		if (i < 6) {
-			el.style.transform = `translateX(${-(i - 1) * (el.offsetWidth + 18)}px)`;
+		if (i <9) {
+			el.style.transform = `translateX(${-(i - 4) * (el.offsetWidth + 18)}px)`;
+		}
+			if (i <5) {
+			el.style.transform = `translateX(0px)`;
 		}
 		if (el.classList.contains('active-pets-in-zoo')) {
 			el.classList.remove('active-pets-in-zoo');
